@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neo Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h2>⚡ NeoAdmin</h2>
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li>📊 Analytics</li>
+      <li>👥 Users</li>
+      <li>📦 Orders</li>
+      <li>⚙ Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="topbar">
+      <h3>Welcome Back 👋</h3>
+      <button onclick="toggleTheme()">Toggle Mode</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h4>Users</h4>
+        <p class="counter">--</p>
+      </div>
+      <div class="card">
+        <h4>Sales</h4>
+        <p class="counter">--</p>
+      </div>
+      <div class="card">
+        <h4>Orders</h4>
+        <p class="counter">--</p>
+      </div>
+      <div class="card">
+        <h4>Revenue</h4>
+        <p class="counter">--</p>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart">
+      <h4>Performance Overview</h4>
+      <canvas id="myChart"></canvas>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
